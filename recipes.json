@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Chicken Curry",
+    "imageUrl": "https://www.freepik.com/free-photo/top-view-vegetable-soup-with-meat-inside-plate-grey_10724750.htm#query=chicken%20curry&position=0&from_view=search&track=ais",
+    "rating": 4,
+    "mainIngredient": "Chicken",
+    "price": 200,
+    "calories": 110,
+    "description": "Chicken curry is a flavorful dish made with tender chicken pieces cooked in a rich and aromatic sauce of onion, garlic, ginger, tomatoes, and a blend of spices. This South Asian classic is usually served with rice or bread. Whether you prefer a mild and creamy version or a spicy and tangy one, chicken curry is a delicious and satisfying choice for any meal."
+  },
+  {
+    "name": "Fish Curry",
+    "imageUrl": "https://www.freepik.com/free-photo/top-view-delicious-fish-meal_10869816.htm#query=Fish%20curry&position=1&from_view=search&track=ais",
+    "rating": 4.2,
+    "mainIngredient": "Salmon",
+    "price": 175,
+    "calories": 217,
+    "description": "Fish curry is a popular dish made with succulent fish pieces simmered in a fragrant and flavorful sauce made from a blend of aromatic spices, coconut milk, and tangy tamarind. This South Asian classic is usually served with steamed rice or bread, and its heat level can be adjusted to suit individual preferences. With its rich and complex flavors, fish curry is a delicious and healthy choice for seafood lovers."
+  },
+  {
+    "name": "Butter Chicken",
+    "imageUrl": "https://www.freepik.com/free-photo/massaman-curry-frying-pan-with-spices-cement-floor_7365952.htm#query=Butter%20chicken&position=8&from_view=search&track=ais",
+    "rating": 4.5,
+    "mainIngredient": "Chicken",
+    "price": 200,
+    "calories": 400,
+    "description": "Butter chicken is a popular North Indian dish consisting of juicy pieces of chicken marinated in yogurt and spices, cooked in a creamy tomato-based sauce with a touch of butter and fenugreek leaves. The result is a rich and decadent dish that is slightly sweet and mildly spicy, perfect for those who enjoy a balance of flavors. Served with rice or naan bread, butter chicken is a beloved classic that is sure to delight your taste buds."
+  },
+  {
+    "name": "Mutton Curry",
+    "imageUrl": "https://www.freepik.com/premium-photo/mutton-gosht-masala-indian-lamb-rogan-josh-with-some-seasoning-served-with-naan-roti-selective-focus_17967189.htm#query=Mutton%20Curry&position=17&from_view=search&track=ais",
+    "rating": 4.2,
+    "mainIngredient": "Mutton",
+    "price": 350,
+    "calories": 200,
+    "description": "Mutton curry is a hearty and flavorful dish made with tender pieces of goat meat slow-cooked in a rich and aromatic sauce of onion, garlic, ginger, tomatoes, and a blend of spices such as cumin, coriander, and cinnamon. This South Asian classic is usually served with rice or bread, and its heat level can be adjusted to suit individual preferences. Whether you prefer a mild and creamy version or a spicy and tangy one, mutton curry is a delicious and satisfying choice for any meat lover."
+  },
+  {
+    "name": "Gongura Chicken",
+    "imageUrl": "https://www.freepik.com/free-photo/high-angle-chicken-meal_12144229.htm#query=Mutton%20Curry&position=1&from_view=search&track=ais",
+    "rating": 4.4,
+    "mainIngredient": "Chicken",
+    "price": 370,
+    "calories": 170,
+    "description": "Gongura chicken is a spicy and tangy Andhra-style chicken curry that features tender chicken pieces cooked in a thick sauce of sorrel leaves, onions, and a blend of spices. The unique flavor of sorrel leaves, also known as gongura, gives this dish a tangy and slightly sour taste that pairs well with steamed rice or Indian bread. A must-try dish for anyone looking for a new and exciting flavor experience."
+  },
+  {
+    "name": "Special Dry Chicken",
+    "imageUrl": "https://www.freepik.com/free-photo/indian-butter-chicken-black-bowl-black-background_23480652.htm#query=chicken%20curry&position=21&from_view=search&track=ais",
+    "rating": 4.2,
+    "mainIngredient": "Chicken",
+    "price": 150,
+    "calories": 170,
+    "description": "Special Dry Chicken is a mouth-watering Indo-Chinese dish made with tender pieces of chicken marinated in spices and cornflour, then deep-fried until crispy and tossed in a flavorful sauce of soy sauce, chili sauce, ginger, garlic, and green onions. This dish has a perfect balance of spicy and savory flavors with a crispy texture that makes it a crowd-pleaser. Served as an appetizer or a main course, Special Dry Chicken is a must-try dish for all chicken lovers."
+  },
+  {
+    "name": "Mughalai Mutton Gravy",
+    "imageUrl": "https://www.bing.com/images/create/mugalai-mutton-gravy/6436835eda4e4efeb326528c7fd316d9?id=iRwF1az90RwEqQNu71YMHA%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay",
+    "rating": 4.6,
+    "mainIngredient": "Mutton",
+    "price": 220,
+    "calories": 340,
+    "description": "Mughlai Mutton Gravy is a rich and flavorful dish from the Mughal cuisine of India. Tender pieces of mutton are cooked in a creamy sauce made with a blend of aromatic spices such as cinnamon, cardamom, and cloves, along with onions, tomatoes, and cashews. This luxurious dish is perfect for those who enjoy a hearty and indulgent meal."
+  },
+  {
+    "name": "Hyderabadi Chicken Gravy",
+    "imageUrl": "https://www.freepik.com/free-photo/side-view-stewed-chicken-with-vegetables-clay-bowl-plaid-tablecloth_9302267.htm#query=Hyderbad%20Chicken%20Gravy&position=5&from_view=search&track=ais",
+    "rating": 4.4,
+    "mainIngredient": "Chicken",
+    "price": 160,
+    "calories": 300,
+    "description": "Hyderabadi chicken gravy is a classic dish from the city of Hyderabad in South India, known for its rich and spicy flavors. Made with tender chicken pieces cooked in a delicious blend of onion, tomato, and yogurt-based sauce, and seasoned with a blend of aromatic spices such as cumin, coriander, and garam masala, this dish is sure to satisfy your taste buds. Served with rice or naan bread, it is a must-try for those who enjoy bold and complex flavors."
+  },
+  {
+    "name": "Malabar Chicken Curry",
+    "imageUrl": "https://www.freepik.com/free-photo/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food_10400646.htm#query=Malabar%20FIsh%20curry&position=9&from_view=search&track=ais",
+    "rating": 4.7,
+    "mainIngredient": "Chicken",
+    "price": 220,
+    "calories": 170,
+    "description": "Malabar Chicken Curry is a delicious South Indian dish hailing from the Malabar region of Kerala. This tangy and flavorful curry is made with tender chicken pieces cooked in a rich and creamy sauce made with coconut milk, tamarind, and a blend of spices. Perfectly balanced in taste, this dish is a must-try for chicken lovers."
+  },
+  {
+    "name": "Chilli Chicken",
+    "imageUrl": "https://www.freepik.com/free-photo/chicken-fried-hot-pot-with-spicy-sauce-korean-style_13902522.htm#query=chilli%20chicken&position=6&from_view=search&track=ais",
+    "rating": 4.6,
+    "mainIngredient": "Chicken",
+    "price": 190,
+    "calories": 246,
+    "description": "Chilli chicken is a popular Indo-Chinese dish made with crispy chicken pieces coated in a sweet and tangy sauce of soy sauce, vinegar, chili sauce, and garlic. This dish can be made with boneless or bone-in chicken, and is usually served as an appetizer or side dish. The dish can be adjusted to suit individual preferences of spice level, and is a perfect choice for those who enjoy a fusion of flavors."
+  },
+  {
+    "name": "Kashmir Chicken Gravy",
+    "imageUrl": "https://www.freepik.com/free-photo/massaman-curry-frying-pan-with-spices-cement-floor_7365954.htm#query=Kashmir%20chicken%20curry&position=3&from_view=search&track=ais",
+    "rating": 4.4,
+    "mainIngredient": "Chicken",
+    "price": 180,
+    "calories": 360,
+    "description": "Kashmiri chicken curry is a rich and aromatic dish that hails from the scenic Kashmir Valley. Made with tender chicken cooked in a flavorful sauce of yogurt, tomatoes, and spices such as fennel, cinnamon, and cardamom, this dish has a distinctively warm and earthy flavor. Served with rice or bread, Kashmiri chicken curry is a satisfying and comforting choice for any meal."
+  }
+]
