@@ -153,14 +153,14 @@ placeorder: async function(req,res){
   }
   );
   await ordermodel.save();
-  // try{
-  //   const cart = await CartModel.findOneAndUpdate({user:req.user._id},
-  //     {$set:{items:[]}},
-  //     {new:true}
-  //     );
-  // } catch(e){
-  //   return res.json({success:false,msg:"something went wrong"});
-  // }
+  try{
+    const cart = await CartModel.findOneAndUpdate({user:req.user._id},
+      {$set:{items:[]}},
+      {new:true}
+      );
+  } catch(e){
+    return res.json({success:false,msg:"something went wrong"});
+  }
   return res.json({success:true,message:"Order Placed Successfully",data:ordermodel});
    } catch(e){
     console.log(e);
