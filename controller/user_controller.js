@@ -28,7 +28,7 @@ logIn:async function(req,res){
 const userData = req.body;
 const foundUser = await UserModel.findOne({email:userData.email});
 if(!foundUser){
-    return res.json({success:false, message:"No User Found"})
+    return res.json({success:false, error:"No User Found"})
 }
 const correctPassword = await bcrypt.compare(userData.password,foundUser.password);
 if(!correctPassword){
@@ -137,6 +137,7 @@ updatecart: async function (req,res){
 
    return res.json({success:true,message:"item updated successfully",data:cart});
 },
+
 
 
 placeorder: async function(req,res){

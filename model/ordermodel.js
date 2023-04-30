@@ -12,6 +12,8 @@ const orderSchema = new Schema({
         }
       ],
          totalPrice:{type:Number},
+         cookingInstruction:{type:String},
+         pickupTime:{type:String},
          orderStatus : {type:String, default :"Order Placed"},
          quantity: {type:Number},
          createdAt: {
