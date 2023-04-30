@@ -147,6 +147,8 @@ placeorder: async function(req,res){
   const ordermodel = new OrderModel({
     user : req.user._id,
     orders: userData.item,
+    cookingInstruction:UserData.cookingInstruction,
+    pickupTime:userData.pickupTime,
     totalPrice: userData.totalprice
   }
   );
