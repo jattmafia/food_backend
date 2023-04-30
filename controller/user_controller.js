@@ -147,7 +147,7 @@ placeorder: async function(req,res){
   const ordermodel = new OrderModel({
     user : req.user._id,
     orders: userData.item,
-    cookingInstruction:UserData.cookingInstruction,
+    cookingInstruction:userData.cookingInstruction,
     pickupTime:userData.pickupTime,
     totalPrice: userData.totalprice
   }
@@ -163,6 +163,7 @@ placeorder: async function(req,res){
   // }
   return res.json({success:true,message:"Order Placed Successfully",data:ordermodel});
    } catch(e){
+    console.log(e);
    return res.json({success: false , message: e});
    }
 
