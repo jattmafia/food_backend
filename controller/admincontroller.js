@@ -3,6 +3,7 @@ const FoodModel = require('./../model/foodmodel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const{JWT_TOKEN} = require('../keys');
+const OrderModel = require('../model/ordermodel');
 
 
 const AdminController = {
@@ -86,6 +87,115 @@ const AdminController = {
             ).catch(err=>{
               return res.json({success:false,message:err});
             })
+          },
+
+
+          getneworder: async function(req,res){
+
+            try{
+          const foundorder= await OrderModel.find({orderStatus: "Order Placed"}).populate('user');
+            
+          if(!foundorder){v
+            return res.json({success:false,error:"no data found"});
+          }
+
+          return res.json({success:true,data:foundorder});
+        } catch(e){
+            return res.json({success:false,error:e});
+        }
+
+          },
+
+          getconfirmorder: async function(req,res){
+
+            try{
+          const foundorder= await OrderModel.find({orderStatus: "Order Confirmed"}).populate('user');
+            
+          if(!foundorder){v
+            return res.json({success:false,error:"no data found"});
+          }
+
+          return res.json({success:true,data:foundorder});
+        } catch(e){
+            return res.json({success:false,error:e});
+        }
+
+          },
+
+          getpickedorder: async function(req,res){
+
+            try{
+          const foundorder= await OrderModel.find({orderStatus: "Order Picked"}).populate('user');
+            
+          if(!foundorder){v
+            return res.json({success:false,error:"no data found"});
+          }
+
+          return res.json({success:true,data:foundorder});
+        } catch(e){
+            return res.json({success:false,error:e});
+        }
+
+          },
+
+          confirmorder: async function(req,res){
+            userData = req.body;
+            try{
+                const foundorder = await OrderModel.findOneAndUpdate({_id: userData.id},
+                    {$set:{orderStatus:"Order Confirmed"}},
+                    {new:true}
+                    );
+               return res.json({success:true,message:"Order Confirmed Successfully"});
+
+            }catch(e){
+                return res.json({success:false,error:e});
+            }
+          },
+
+          pickorder: async function(req,res){
+            userData = req.body;
+            try{
+                const foundorder = await OrderModel.findOneAndUpdate({_id: userData.id},
+                    {$set:{orderStatus:"Order Picked"}},
+                    {new:true}
+                    );
+               return res.json({success:true,message:"Order Picked Successfully"});
+
+            }catch(e){
+                return res.json({success:false,error:e});
+            }
+          },
+
+
+
+          deletefood: async function(req,res){
+            userData = req.body.id;
+            try{
+                const foundfood =await  FoodModel.findByIdAndDelete(userData);
+                if(!foundfood){
+                    return res.json({success:false,error:"Something went wrong"});
+                }
+                return res.json({success: true,message:"Meal delete successfully"});
+            }catch(e){
+                console.log(e);
+                return res.json({success:false,error:e});
+            }
+          },
+
+
+          updateprice: async function(req,res){
+            userData = req.body;
+            try{
+                const foundfood = await FoodModel.findOneAndUpdate({_id: userData.id},
+                    {$set:{price : userData.price}},
+                    {new:true}
+                    );
+               return res.json({success:true,message:"Price Updated Successfully"});
+
+            }catch(e){
+                console.log(e);
+                return res.json({success:false,error:e});
+            }
           }
 
 }
