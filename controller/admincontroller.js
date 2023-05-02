@@ -4,6 +4,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const{JWT_TOKEN} = require('../keys');
 const OrderModel = require('../model/ordermodel');
+const fs = require('fs');
+const path = require('path');
 
 
 const AdminController = {
@@ -174,6 +176,22 @@ const AdminController = {
                 const foundfood =await  FoodModel.findByIdAndDelete(userData);
                 if(!foundfood){
                     return res.json({success:false,error:"Something went wrong"});
+                }
+                try {
+                  console.log(foundfood.image);
+                  const filename = foundfood.image;
+                  const filePath = path.join(__dirname, '../foodimages/', filename);
+                  
+                  // Check if file exists before attempting to delete
+                  if (fs.existsSync(filePath)) {
+                    // Delete the file
+                    fs.unlinkSync(filePath);
+                  
+                  } else {
+                  
+                  }
+                } catch (err) {
+                return  res.status(500).json({ message: err.message });
                 }
                 return res.json({success: true,message:"Meal delete successfully"});
             }catch(e){
