@@ -15,5 +15,6 @@ const imageupload = require('../middleware/foodimage_upload');
  AdminRoutes.post("/confirmorder",requirelogin,AdminController.confirmorder);
  AdminRoutes.post("/deletefood",requirelogin,AdminController.deletefood);
  AdminRoutes.post("/updateprice",requirelogin,AdminController.updateprice);
+ AdminRoutes.post("/orderpick",requirelogin,AdminController.pickorder);
 
 module.exports = AdminRoutes;
